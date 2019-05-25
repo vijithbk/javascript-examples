@@ -1,4 +1,4 @@
-let promiseToCleanRoom = new Promise(function(resolve, reject) {
+let promiseToCleanRoom = new Promise((resolve, reject) => {
 	let roomCleaned = true;
 	
 	if(roomCleaned) {
@@ -8,8 +8,8 @@ let promiseToCleanRoom = new Promise(function(resolve, reject) {
 	}
 });
 
-promiseToCleanRoom.then(function(message) {
+promiseToCleanRoom.then((message) => {
 	console.log("Room is " + message)
-}).catch(function(message) {
+}).catch((message) => {
 	console.log("Room is " + message)
 })
